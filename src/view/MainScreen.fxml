@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxWidth="600.0" minWidth="600.0" prefHeight="488.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreenController">
+   <children>
+      <Button fx:id="btCalculate" layoutX="463.0" layoutY="419.0" mnemonicParsing="false" onAction="#calculate" prefHeight="56.0" prefWidth="114.0" text="Calculate" />
+      <ListView fx:id="list" layoutY="71.0" maxHeight="327.0" maxWidth="600.0" minHeight="70.0" minWidth="600.0" prefHeight="327.0" prefWidth="600.0" />
+      <GridPane alignment="CENTER" layoutX="7.0" layoutY="8.0" prefHeight="56.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="200.0" text="Course Name" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="200.0" text="Credits" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="200.0" text="Grade" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <ChoiceBox fx:id="cbNumberOfCourses" onAction="#changeCourseNumber" layoutX="164.0" layoutY="432.0" prefHeight="31.0" prefWidth="56.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="429.0" prefHeight="37.0" prefWidth="120.0" text="# of Courses:" />
+   </children>
+</AnchorPane>
