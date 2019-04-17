@@ -29,8 +29,8 @@ public class GPACalculator extends Application {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {//3.12, 3.06, 3.36, 3.47, 3.46, 3.51
-        // TODO code application logic here
+    public static void main(String[] args) {//3.79, 3.06, 3.36, 3.47, 3.46, 3.51, 3.67, 3.52
+
         
 //        Course[] courses = {new Course(3,"A-"), new Course(4,"A"), new Course(3,"A-"), new Course(2,"B+"), new Course(3,"B-")};
 //
